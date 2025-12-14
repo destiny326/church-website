@@ -24,3 +24,19 @@ document.querySelectorAll("#nav-links a").forEach(link => {
     navLinks.classList.remove("active");
   });
 });
+
+// Auto add padding to page content equal to header height
+function setPageContentPadding() {
+  const header = document.querySelector('header');
+  const pageContent = document.querySelector('.page-content');
+  if (header && pageContent) {
+    const headerHeight = header.offsetHeight;
+    pageContent.style.paddingTop = headerHeight + 'px';
+  }
+}
+
+// Initial call
+setPageContentPadding();
+
+// Update on window resize (responsive)
+window.addEventListener('resize', setPageContentPadding);

@@ -2,7 +2,6 @@
 $pageTitle = "Ministries";
 require_once 'config/db.php';
 require_once 'includes/header.php';
-require_once 'includes/navigation.php';
 ?>
 
 <main class="container">
@@ -10,18 +9,23 @@ require_once 'includes/navigation.php';
     
     <div class="ministry-grid">
         <div class="ministry-card">
+            <img src="images/choir.jpeg" alt="Singing choir">
             <h3>Worship & Music</h3>
             <p>Lead congregational worship</p>
         </div>
+        </div>
         
         <div class="ministry-card">
+            <img src="images/youth.jpeg" alt="youth">
             <h3>Youth Ministry</h3>
             <p>Ages 13-30 fellowship</p>
         </div>
         
         <div class="ministry-card">
+            <img src="images/children-church" alt="Children's Church">
             <h3>Children's Church</h3>
             <p>Sunday programs for kids</p>
+        </div>
         </div>
         
         <div class="ministry-card">

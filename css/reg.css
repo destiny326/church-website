@@ -1,0 +1,119 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= PAGE BACKGROUND ================= */
+body {
+  background: #111; /* dark background to match header */
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 80px auto 40px; /* offset for fixed header */
+  padding: 20px;
+}
+
+/* ================= REGISTER FORM ================= */
+.register-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.register-form h1 {
+  text-align: center;
+  color: #4da3ff; /* header accent color */
+  margin-bottom: 25px;
+}
+
+.register-form p {
+  text-align: center;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.register-form p a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FORM GROUPS ================= */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: 2px solid #4da3ff;
+  background: #333;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #4da3ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1a75ff;
+}
+
+/* ================= ALERT ================= */
+.alert.error {
+  background: #8b0000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .container {
+    margin: 60px 15px 30px;
+    padding: 15px;
+  }
+
+  .register-form {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}

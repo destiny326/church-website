@@ -1,0 +1,119 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= PAGE BACKGROUND ================= */
+body {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 450px;
+  margin: 100px auto 40px; /* offset for fixed header */
+  padding: 20px;
+}
+
+/* ================= LOGIN FORM ================= */
+.login-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h1 {
+  text-align: center;
+  color: #4da3ff; /* matches header accent */
+  margin-bottom: 25px;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.login-form p a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FORM GROUPS ================= */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: 2px solid #4da3ff;
+  background: #333;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #4da3ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1a75ff;
+}
+
+/* ================= ALERT ================= */
+.alert.error {
+  background: #8b0000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .container {
+    margin: 80px 15px 30px;
+    padding: 15px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}

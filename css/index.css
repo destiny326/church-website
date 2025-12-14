@@ -80,7 +80,7 @@ header.hide {
 .register-btn {
   padding: 8px 16px;
   border: none;
-  background: blue;
+  background: #4da3ff;
   color: #fff;
   font-weight: 600;
   border-radius: 4px;
@@ -118,7 +118,7 @@ header.hide {
 
 .donation-bar button {
   background: #fff;
-  color: blue;
+  color: #2c86e0;
   border: none;
   padding: 8px 18px;
   font-weight: bold;
@@ -162,7 +162,7 @@ header.hide {
   padding: 14px 28px;
   border: none;
   background: white;
-  color: blue;
+  color: #2c86e0;
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
@@ -184,7 +184,7 @@ header.hide {
 }
 
 .service-box h3 {
-  color: blue;
+  color: #2c86e0;
   margin-bottom: 10px;
 }
 

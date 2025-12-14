@@ -1,0 +1,129 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= PAGE CONTENT ================= */
+body {
+  background: #111; /* dark background to match header */
+  color: #fff;
+  line-height: 1.6;
+}
+
+.page-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ================= HEADINGS ================= */
+h1, h2 {
+  color: #4da3ff; /* matches header accent */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* ================= CONTENT CARDS ================= */
+.content-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.content-card p,
+.content-card li {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+
+.content-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ================= PASTOR CARDS ================= */
+.card {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.card .container {
+  padding: 20px;
+  flex: 1;
+}
+
+.card h4 {
+  color: #4da3ff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .content-card,
+  .card {
+    padding: 15px;
+  }
+}

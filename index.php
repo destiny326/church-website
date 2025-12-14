@@ -32,7 +32,7 @@
 
         <!-- LINKS -->
         <ul id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="membership.php">Join Us</a></li>
           <li><a href="contact.php">Contact</a></li>

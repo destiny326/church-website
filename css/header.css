@@ -1,16 +1,16 @@
+/* ================= RESET ================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ================= HEADER ================= */
-
 header {
-  width: 100%;
   position: fixed;
   top: 0;
-  background: #000000cc;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
   transition: transform 0.35s ease;
 }
@@ -19,7 +19,7 @@ header.hide {
   transform: translateY(-100%);
 }
 
-/* HEADER TOP */
+/* ================= HEADER TOP ================= */
 .header-top {
   display: flex;
   align-items: center;
@@ -27,40 +27,148 @@ header.hide {
   padding: 15px 40px;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 .logo img {
   width: 70px;
-}
-
-/* NAME */
-.name {
-  font-size: 1.1rem;
-  font-weight: bold;
-  line-height: 1.2;
+  height: auto;
 }
 
 /* ================= NAV ================= */
-
 .nav {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-/* DESKTOP NAV */
+/* ================= NAV LINKS (DESKTOP) ================= */
 #nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 22px;
+}
+
+#nav-links li {
+  display: flex;
+  align-items: center;
 }
 
 #nav-links a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-#nav-links a:hover {
+#nav-links a:hover,
+#nav-links a.active {
   color: #4da3ff;
+}
+
+/* ================= AUTH BUTTONS ================= */
+.btn-auth {
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: #4da3ff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-auth:hover {
+  background: #2c86e0;
+}
+
+.btn-auth.logout {
+  background: #b30000;
+}
+
+.btn-auth.logout:hover {
+  background: #8a0000;
+}
+
+.welcome {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ================= DONATION BAR ================= */
+.donation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.donation-bar button {
+  background: #fff;
+  color: #004aad;
+  border: none;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.donation-bar button:hover {
+  background: #e6e6e6;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    width: 240px;
+    padding: 20px;
+    display: none;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  #nav-links li {
+    width: 100%;
+  }
+
+  #nav-links a {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-top {
+    padding: 15px 20px;
+  }
+
+  .donation-bar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 }
