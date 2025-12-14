@@ -12,65 +12,7 @@ require_once 'config/db.php';
     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
 </head>
 
-
-<!-- HEADER -->
-  <header>
-    <div class="header-top">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Faith Deliverance Tabernacle Logo">
-      </div>
-
-      
-
-      <!-- NAV -->
-      <nav class="nav">
-        <!-- HAMBURGER (mobile only) -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <!-- LINKS -->
-        <ul id="nav-links">
-         <li><a href="index.php" class="<?php echo $current_page == 'index.php' ? 'active' : ''; ?>">Home</a></li>
-            <li><a href="about.php" class="<?php echo $current_page == 'about.php' ? 'active' : ''; ?>"> About</a></li>
-            <li><a href="ministries.php" class="<?php echo $current_page == 'ministries.php' ? 'active' : ''; ?>">Ministries</a></li>
-            <li><a href="counseling.php" class="<?php echo $current_page == 'counseling.php' ? 'active' : ''; ?>"> Counseling</a></li>
-            <li><a href="prayer.php" class="<?php echo $current_page == 'prayer.php' ? 'active' : ''; ?>"> Prayer</a></li>
-            <li><a href="events.php" class="<?php echo $current_page == 'events.php' ? 'active' : ''; ?>"> Events</a></li>
-            <li><a href="membership.php" class="<?php echo $current_page == 'membership.php' ? 'active' : ''; ?>"> Join Us</a></li>
-            <li><a href="blessings.php" class="<?php echo $current_page == 'blessings.php' ? 'active' : ''; ?>"> Tithes & Offerings</a></li>
-            <li><a href="contact.php" class="<?php echo $current_page == 'contact.php' ? 'active' : ''; ?>"> Contact Us</a></li>
-        
-     
-
-            <!-- Login/Logout Button -->
-            
-                <?php if(isset($_SESSION['user_id'])): ?>
-                    <div class="user-welcome">
-                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
-                        <a href="dashboard.php" class="btn-auth">Dashboard</a>
-                        <button><a href="logout.php" class="btn-auth logout">Logout</a></button>
-                    </div>
-                <?php else: ?>
-                    <div class="login-buttons">
-                      <li><button> <a href="login.php" class="btn-auth"> Login</a></li></button>
-                     <li><button><a href="register.php" class="btn-auth register"> Register</a></button></li>
-                    </div>
-                <?php endif; ?>
-            </ul>
-           </nav>
-        </div>
-
-        <!-- DONATION BAR -->
-    <div class="donation-bar">
-      <span>Unable to join us? You can still support.</span>
-     <a href="blessings.php"><button>Give Today</button></a>
-    </div>
-    
-    </header>
-  
+<main>
 <body>
     <h1>About Our Church</h1>
     
@@ -110,10 +52,8 @@ require_once 'config/db.php';
          and helping the congregation grow in faith and service.</p> 
   </div>
 </div>
-
-
 </body>
+</main>
 </html>
-
 
 <footer><?php require_once 'includes/footer.php'; ?></footer>
