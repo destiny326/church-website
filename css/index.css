@@ -77,7 +77,7 @@ header.hide {
 }
 
 /* LOGIN BUTTON */
-.login-btn {
+.register-btn {
   padding: 8px 16px;
   border: none;
   background: blue;
@@ -87,7 +87,7 @@ header.hide {
   cursor: pointer;
 }
 
-.login-btn:hover {
+.register-btn:hover {
   background: #0b5ed7;
 }
 

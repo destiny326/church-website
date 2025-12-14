@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faith Deliverance Tabernacle</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 
@@ -37,8 +37,8 @@
           <li><a href="membership.php">Join Us</a></li>
           <li><a href="contact.php">Contact</a></li>
           <li>
-            <a href="login.php">
-              <button type="button" class="login-btn">Login</button>
+            <a href="register.php">
+              <button type="button" class="register-btn">Sign Up</button>
             </a>
           </li>
         </ul>
@@ -60,7 +60,7 @@
 
       <div class="btn-group">
         <a href="https://maps.app.goo.gl/hHZzGQmMMfDH13oU8" target="_blank"><button>VISIT US</button></a>
-        <a href="membership.php"></a><button>GROW WITH US</button>
+        <a href="membership.php"><button>GROW WITH US</button></a>
       </div>
 
     
@@ -111,3 +111,4 @@
 
 </body>
 </html>
+<?php require_once 'includes/footer.php'; ?>

@@ -1,10 +1,10 @@
 <?php
 // Database configuration
-define('DB_SERVER', 'mysql-c56c679-cysecvm-1d68.l.aivencloud.com');
+define('DB_SERVER', 'mysql-6618668-destinyrma4-3d00.g.aivencloud.com');
 define('DB_USERNAME', 'avnadmin');
-define('DB_PASSWORD', 'AVNS_0uVNYN-3gNdC7m_Mizh');
+define('DB_PASSWORD', 'AVNS_2QgIDfq3O9U2e_p9o5h');
 define('DB_NAME', 'church_db');
-define('DB_PORT', '13208');
+define('DB_PORT', '22394');
 
 // Start session if not already started
 if (session_status() === PHP_SESSION_NONE) {

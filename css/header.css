@@ -4,8 +4,63 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #222;
+/* ================= HEADER ================= */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #000000cc;
+  z-index: 1000;
+  transition: transform 0.35s ease;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+/* HEADER TOP */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+/* LOGO */
+.logo img {
+  width: 70px;
+}
+
+/* NAME */
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* ================= NAV ================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* DESKTOP NAV */
+#nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+#nav-links a:hover {
+  color: #4da3ff;
 }
