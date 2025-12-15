@@ -2,7 +2,7 @@
 $pageTitle = "Give";
 require_once 'config/db.php';
 require_once 'includes/header.php';
-require_once 'includes/navigation.php';
+
 ?>
 
 <main class="container">

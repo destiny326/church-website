@@ -1,0 +1,72 @@
+/* membership.css */
+
+/* Main container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Page heading */
+.container > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Content cards styling (your custom sections, not JotForm) */
+.content-card {
+    background-color: #000;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings inside content cards */
+.content-card h2,
+.content-card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs inside content cards */
+.content-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Membership benefits list */
+.content-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.content-card ul li {
+    margin-bottom: 10px;
+}
+
+/* Make sure any links inside content cards are styled */
+.content-card a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.content-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+}

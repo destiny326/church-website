@@ -2,7 +2,7 @@
 $pageTitle = "Contact";
 require_once 'config/db.php';
 require_once 'includes/header.php';
-require_once 'includes/navigation.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = mysqli_real_escape_string($conn, $_POST['name']);

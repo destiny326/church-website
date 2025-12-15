@@ -1,0 +1,156 @@
+/* ================= GLOBAL ================= */
+body {
+  background: #0e0e0e;
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Offset for fixed header */
+.page-content {
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+/* ================= PAGE TITLE ================= */
+.page-content h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ================= CONTENT CARDS ================= */
+.content-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.content-card h2,
+.content-card h3 {
+  color: #4da3ff;
+  margin-bottom: 15px;
+}
+
+.content-card p {
+  color: #dddddd;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* ================= FORM ================= */
+.counseling-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #cccccc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* FIX SELECT DROPDOWN VISIBILITY */
+.form-group select {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+/* Dropdown options */
+.form-group select option {
+  background-color: #ffffff;   /* solid light background */
+  color: #000000;              /* dark text so it’s readable */
+}
+
+
+/* ================= BUTTON ================= */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #004080, #0066cc);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0066cc, #4da3ff);
+}
+
+/* ================= ALERT ================= */
+.alert {
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.alert.success {
+  background: rgba(0, 128, 0, 0.25);
+  color: #9dff9d;
+}
+
+.alert.error {
+  background: rgba(128, 0, 0, 0.25);
+  color: #ff9d9d;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .page-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding-top: 140px;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+  }
+}

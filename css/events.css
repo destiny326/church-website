@@ -1,0 +1,111 @@
+/* events.css */
+
+/* Page container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main page heading */
+.container > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 120px; /* sits below header */
+    margin-bottom: 30px;
+    color: #000; /* white text for contrast */
+    padding: 150px 40px 50px;
+}
+
+/* Content cards */
+.content-card {
+    background-color: #60626c; 
+    color: #000; /* text inside cards stays default */
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Headings inside content cards */
+.content-card h2,
+.content-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: blue; /* matches header accent */
+}
+
+/* Paragraphs inside content cards */
+.content-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ffffff; /* visible on dark background */
+}
+
+/* Lists inside content cards */
+.content-card ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content-card ul li {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Event items */
+.events-list .event-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2); /* subtle divider for dark theme */
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-date {
+    font-weight: bold;
+    margin-right: 20px;
+    min-width: 70px;
+    color: #ffffff;
+}
+
+.event-details h3 {
+    margin: 0 0 5px 0;
+    color: #ffffff;
+}
+
+.event-details p {
+    margin: 2px 0;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .events-list .event-item {
+        flex-direction: column;
+    }
+
+    .event-date {
+        margin-bottom: 5px;
+    }
+}
