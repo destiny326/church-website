@@ -10,7 +10,8 @@ if (!isset($_SESSION['user_id'])) {
 
 require_once 'includes/header.php';
 ?>
-
+<link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 <main class="container">
     <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
     
@@ -47,3 +48,4 @@ require_once 'includes/header.php';
 </main>
 
 <?php require_once 'includes/footer.php'; ?>
+<script src="js/header.js"></script>

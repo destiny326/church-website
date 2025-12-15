@@ -4,7 +4,8 @@ require_once 'config/db.php';
 require_once 'includes/header.php';
 
 ?>
-
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/blessings.css">
 <main class="container">
     <h1>Tithes & Offerings</h1>
     
@@ -33,7 +34,7 @@ require_once 'includes/header.php';
     
     <section class="content-card">
         <h3>Why Give?</h3>
-        <p>"Each of you should give what you have decided in your heart to give..." - 2 Corinthians 9:7</p>
+       
         <p>Your giving supports:</p>
         <ul>
             <li>Church operations and facilities</li>
@@ -45,3 +46,4 @@ require_once 'includes/header.php';
 </main>
 
 <?php require_once 'includes/footer.php'; ?>
+<script src="js/header.js"></script>

@@ -1,0 +1,72 @@
+/* Align main content to the left */
+main.container {
+    max-width: 900px;      /* keeps content from being too wide */
+    margin: 0;             /* aligns to left */
+    padding: 20px;         /* spacing inside container */
+    font-family: Arial, sans-serif; /* match headers theme */
+    color: #333;           /* match header text color */
+}
+
+/* Contact info cards styling */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 20px;
+    padding: 150px 50px 30px; /* large padding for desktop */
+}
+
+.info-card {
+    background-color: #f9f9f9; /* subtle light background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #222; /* same as header theme */
+    font-size: 1.3rem;
+}
+
+.info-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* JotForm form alignment */
+.form-all {
+    margin-left: 0 !important;   /* align to left */
+    max-width: 100% !important;  /* fill available width */
+    padding: 20px;               /* spacing inside form */
+}
+
+/* Ensure form inputs match overall theme */
+.form-textbox,
+.form-textarea,
+.form-dropdown,
+.form-submit-button {
+    font-family: Arial, sans-serif; /* match headers */
+    color: #333;                     /* match header theme */
+    width: 100% !important;          /* full width on small screens */
+}
+
+/* Responsive tweaks for mobile phones */
+@media screen and (max-width: 768px) {
+    main.container {
+        padding: 15px; /* less padding on mobile */
+    }
+    .contact-info {
+        padding: 100px 15px 20px; /* smaller top/bottom padding */
+        gap: 15px;               /* tighter spacing between cards */
+    }
+    .info-card {
+        padding: 15px; /* smaller card padding on mobile */
+    }
+    .form-textarea {
+        width: 100% !important; /* responsive textarea */
+    }
+    .form-all {
+        padding: 15px !important; /* smaller form padding */
+    }
+}
